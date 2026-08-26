@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Lista de exercicios 01</h1>
+    <br><hr>
+
+    <h3> QUESTAO 03 - CONVERSAO de valores monetarios</h3>
+
+    Digite o valor em real:
+    <input type="text" id = "valorReal">
+
+    Digite o valor da cotacao:
+    <input type="text" id = "cotacao">
+
+    <button onclick = "converterReal()">converter</button>
+    <!-- <script type="text/javascript"></script> -->
+     <script>
+        function converterReal(){
+            let real = Number(document.getElementById("valorreal").value);
+            let cotacao = Number(document.getElementById("cotacao").value);
+            
+            let dolar  = real / cotacao;
+            
+
+            document.getElementById("result1").innerHTML="Resultado (valor em dolar):" + dolar.toFixed(2);
+
+        ]]
+        }
+     </script>
+</body>
+</html>
+
+questao 02 : o usuario diz o salario base e diz as horas extras cada hora extra eh 20 reais .
+questao 02 : 
