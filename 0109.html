@@ -1,0 +1,39 @@
+
+html
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Lista</h1>
+    <br>
+    <hr>
+
+    Digite:
+    <input type="text" id="idinput">
+
+    <button onclick="funcao()">Verificar</button>
+
+    <p id="resultado"></p>
+
+    <script>
+
+        function funcao() {
+
+            let n1 = Number(document.getElementById("idinput").value);
+
+            document.getElementById("resultado").innerHTML = "Valor: " + n1;
+
+        }
+
+    </script>
+
+</body>
+</html>
+```
