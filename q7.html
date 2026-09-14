@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Nota1:
+    <input type="text" id = "n1">
+    Nota2:
+    <input type="text" id = "n2">
+    Nota3:
+    <input type="text" id = "n3">
+    <button onclick="calcular()">media</button>
+    <p id = "resultado"></p>
+
+    <script>
+        function calcular(){
+            let nota1 = Number(document.getElementById("n1").value);
+            let nota2 = Number(document.getElementById("n2").value);
+            let nota3 = Number(document.getElementById("n3").value);
+            let media = (nota1 + nota2 + nota3) / 3;
+            if(media >= 70){
+                 document.getElementById("resultado").innerHTML = media + " aprovado";
+            
+            }else if(media >= 40 && media < 70){
+                document.getElementById("resultado").innerHTML = "prova final";
+            }else{
+                document.getElementById("resultado").innerHTML = "reprovado";
+            }
+           
+        }
+    </script>
+</body>
+</html>

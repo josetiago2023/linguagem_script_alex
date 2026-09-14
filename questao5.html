@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Digite o numero:
+    <input type="text" id = "numero">
+    <button onclick="calcular()">clique</button>
+    <p id = "resultado"></p>
+
+    <script>
+        function calcular(){
+            let n1 = Number(document.getElementById("numero").value);
+            if(n1 % 2 == 0){
+                document.getElementById("resultado").innerHTML = "é  par";
+                
+            }else{
+                document.getElementById("resultado").innerHTML = " é impar";
+            }
+
+        }
+    </script>
+</body>
+</html>

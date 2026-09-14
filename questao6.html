@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Digite o usuário:
+    <input type="text" id = "user">
+    Digite a senha:
+    <input type="text"id = "password">
+    <button onclick = "calcular()">clique</button>
+    <p id = "resultado"></p>
+
+    <script>
+        function calcular(){
+            let login = document.getElementById("user").value;
+            let senha = document.getElementById("password").value;
+            if(login == "login" && senha == "senha"){
+                document.getElementById("resultado").innerHTML = "autenticado";
+            }else{
+                document.getElementById("resultado").innerHTML = "incorreto";
+            }
+        }
+    </script>
+</body>
+</html>

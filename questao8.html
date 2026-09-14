@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    candidato A
+    <input type="number" id = "cA">
+    nome candidato A
+    <input type="text" id = "nomecA">
+
+    candidato B
+    <input type = "number" id = "cB">
+    Nome candidato B:
+    <input type="text" id = "nomecB">
+
+    vbrancos
+    <input type="number" id = "white">
+    vnulos
+    <input type="text" id = "nulos" >
+    <button onclick = "calcular()">clique</button>
+    <p id = "resultado"></p>
+
+    <script>
+        function calcular(){
+            let candA = Number(document.getElementById("cA").value);
+            let nomecandA = document.getElementById("nomecandA").value;
+
+            let candB = Number(document.getElementById("cB").value);
+            let nomecandB = document.getElementById("nomecB").value;
+
+            let brancos = Number(document.getElementById("white").value);
+            let nulo = Number(document.getElementById("nulos").value);
+            if(candA > candB){
+                document.getElementById("resultado").innerHTML = "candidato vencedor é:" + nomecandA + "quantidade de votos:" + candA;
+
+
+            }else{
+                document.getElementById("resultado").innerHTML = "candidato vencedor é:" + nomecandB + "quantidade de votos é:" + candB;
+            }
+        }
+    </script>
+</body>
+</html>

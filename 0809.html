@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    login
+    <input type="text" id = "Login">
+    senha
+    <input type="text" id = "Senha">
+
+    <button onclick="entrar()">entrar</button>
+    <p id = "resultado"></p>
+
+    
+    <script>
+        const loginpadrao = "admin";
+    const senhapadrao = "1234";
+
+
+        function entrar(){
+
+           
+            let login = document.getElementById("Login").value;
+            let senha = document.getElementById("Senha").value;
+
+            if(login == loginpadrao && senha == senhapadrao){
+                document.getElementById("resultado").innerHTML = "autenticacao realizada com sucesso";
+                // window.location.href = "aulaformularios.html";
+
+
+            }else{
+                document.getElementById("resultado").innerHTML = "login ou senha incorreto";
+                //alert("login ou senha incorreto");
+            }
+        }
+    </script>
+
+    
+</body>
+</html>
