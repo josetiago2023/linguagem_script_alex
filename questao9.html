@@ -8,17 +8,31 @@
 <body>
     salario
     <input type="number" id = "salari">
-    reajuste
-    <input type="number" id = "reajust">
+    anos  de trabalho
+    <input type="number" id = "anos">
     <button onclick="calcular()">clique</button>
     <p id = "resultado"></p>
 
     <script>
         function calcular(){
+            let teste;
             let salario = Number(document.getElementById("salari").value);
-            let reajuste = Number(document.getElementById("reajust").value);
-            salarioreajustado = (salario * reajuste) / 100;
-            document.getElementById("resultado").innerHTML = salarioreajustado; 
+            let anostrabalho = Number(document.getElementById("anos").value);
+            if(anostrabalho >= 0 && anostrabalho <= 9 ){
+                let reajuste0_9 = (salario * 8) / 100;
+                reajustado = salario + reajuste;
+                teste = "salario com reajuste no valor de: " + reajustado;
+
+            }else if(anostrabalho >= 10 && anostrabalho <= 19){
+                let reajuste10_19 = (salario * 10) / 100;
+                reajustado10_19 = salario + reajuste10_19;
+                teste = "salario reajustado no valor de: " + reajustado10_19;
+            }else if(anostrabalho >= 20){
+                salario += (salario * 15) / 100;
+                teste = "salario reajustado no valor de: " + salario;
+            }
+            // salarioreajustado = (salario * reajuste) / 100;
+            document.getElementById("resultado").innerHTML = teste; 
         }
     </script>
 </body>
