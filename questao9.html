@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    salario
+    <input type="number" id = "salari">
+    reajuste
+    <input type="number" id = "reajust">
+    <button onclick="calcular()">clique</button>
+    <p id = "resultado"></p>
+
+    <script>
+        function calcular(){
+            let salario = Number(document.getElementById("salari").value);
+            let reajuste = Number(document.getElementById("reajust").value);
+            salarioreajustado = (salario * reajuste) / 100;
+            document.getElementById("resultado").innerHTML = salarioreajustado; 
+        }
+    </script>
+</body>
+</html>

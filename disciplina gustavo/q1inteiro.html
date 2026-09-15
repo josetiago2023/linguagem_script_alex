@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    numero
+    <input type="text" id="n">
+
+    <button onclick="calcular()">clique</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function calcular(){
+
+            let teste;
+            let n1 = Number(document.getElementById("n").value);
+
+            if(n1 == 0){
+                teste = "Neutro";
+            }else if(n1 < 0){
+                teste = "Negativo";
+            }else{
+                teste = "Positivo";
+            }
+
+            if(n1 % 2 == 0){
+                teste += " e Par";
+            }else{
+                teste += " e Ímpar";
+            }
+
+            document.getElementById("resultado").innerHTML = teste;
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    numero
+    <input type="text" id = "n">
+    <button onclick = "calcular()">clique</button>
+    <p id = "resultado"></p>
+
+    <script>
+        function calcular(){
+            let teste;
+            let n1 = Number(document.getElementById("n").value);
+
+            if(n1 == 0){
+                teste = "Neutro"
+                
+
+            }else if(n1 < 0){
+                teste = "Negativo"
+                
+            }else{
+                teste = "positivo"
+            }
+
+            if(n1 > 0 && n1 % 2 == 0){
+                teste += "par"
+            }else{
+                teste += "impar"
+            }
+            document.getElementById("resultado").innerHTML = teste;
+          
+            }
+    </script>
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    numero
+    <input type="text" id = "n">
+    <button onclick = "calcular()">clique</button>
+    <p id = "resultado"></p>
+
+    <script>
+        function calcular(){
+            let teste;
+            let n1 = Number(document.getElementById("n").value);
+            if(n == 0){
+                teste = "Neutro";
+
+            }else if(n1 > 0){
+                teste = "positivo";
+
+            }else if(n1 < 0){
+                teste = "Negativo";
+            }if(n>0){
+                
+                }if(n % 2 == 0){
+                    teste = "par"
+                
+               
+            
+            }else{
+                teste = "ímpar"
+            }
+            document.getElementById("resultado").innerHTML = teste;
+        }
+    </script>
+</body>
+</html> -->
