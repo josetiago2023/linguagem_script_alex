@@ -1,4 +1,102 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Digite um numero:
+    <input type="number" id = "n">
+    <button onclick = "calcular()">calcular</button>
+    <p id = "resultado"></p>
+
+    <script>
+        function calcular(){
+            let teste;
+            let n1 = Number(document.getElementById("n").value);
+            if(n1 == 0){
+                teste = "Neutro"
+            }else if(n1 < 0){
+                teste = "Negativo"
+            }else if(n1 % 2 == 0){
+                teste = "positivo par"
+            }else{
+                teste = "Positivo impar"
+            }
+            document.getElementById("resultado").innerHTML = teste;
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificar número</title>
+</head>
+<body>
+
+    numero
+    <input type="text" id="n">
+
+    <button onclick="calcular()">clique</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function calcular(){
+
+            let teste;
+            let n1 = Number(document.getElementById("n").value);
+
+            if(n1 == 0){
+                teste = "Neutro";
+
+            }else if(n1 < 0){
+                teste = "Negativo";
+
+            }else if(n1 % 2 == 0){
+                teste = "Positivo e Par";
+
+            }else{
+                teste = "Positivo e Ímpar";
+            }
+
+            document.getElementById("resultado").innerHTML = teste;
+        }
+    </script>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -39,7 +137,7 @@
     </script>
 
 </body>
-</html>
+</html> -->
 
 
 
@@ -50,7 +148,7 @@
 
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -89,7 +187,7 @@
             }
     </script>
 </body>
-</html> 
+</html>  -->
 
 
 
