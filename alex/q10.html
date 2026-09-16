@@ -5,7 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    
+<!-- var, const, let  -->
+<body> 
+    produto
+    <input type="text" id = "produto">
+    Quantidade
+    <input type="number" id = "quantidade">
+    valor da compra
+    <input type="number" id = "preco">
+   
+    <button onclick="calcular()">clique</button>
+    <p id = "resultado"></p>
+
+    <script>
+        function calcular(){
+            let teste;
+            let Produto = document.getElementById("produto").value;
+            let Quantidade = Number(document.getElementById("quantidade").value);
+            let Preco = Number(document.getElementById("preco").value);
+            let V_inicial = Quantidade * Preco;
+            let V_final = 0;
+
+         
+            if(V_inicial > 500){
+                //  V_final = V_inicial * 0.85; (1-15)
+                V_final += V_inicial * 0.85;
+                teste = "valor da compra " + V_inicial +
+                "<br> valor final: " + V_final;
+
+
+            }else if(V_inicial >= 201 && V_inicial <= 500){
+                //Vfinal += Quantidade * (Vcompra * 10) / 100;
+                V_final += V_inicial * 0.90;
+                teste = "valor da compra: " + V_inicial +
+                        "<br>valor final " + V_final;
+
+
+            }else if(V_inicial <= 200){
+                teste = "sem desconto"
+
+            }else{
+                teste = "coloque um valor >= 201R$ para obter desconto"
+            }
+            document.getElementById("resultado").innerHTML = teste;
+        }
+    </script>
 </body>
 </html>
