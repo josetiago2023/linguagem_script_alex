@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Digite sua idade:
+    <input type="number" id = "Idade">;
+    <button onclick="calcular()">CLICK</button>;
+    <p id ="resultado>"</p>;
+
+    <script>
+        function calcular(){
+            let teste;
+            let idade = Number(document.getElementById("resultado").value);
+            if(idade < 0){
+                teste = "idade inválida"
+                return;
+            }
+        }
+    </script>
+</body>
+</html>
