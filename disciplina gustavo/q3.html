@@ -9,17 +9,32 @@
     Digite sua idade:
     <input type="number" id = "Idade">;
     <button onclick="calcular()">CLICK</button>;
-    <p id ="resultado>"</p>;
+    <p id ="resultado"></p>;
 
     <script>
         function calcular(){
             let teste;
-            let idade = Number(document.getElementById("resultado").value);
+            let idade = Number(document.getElementById("Idade").value);
             if(idade < 0){
-                teste = "idade inválida"
+                teste = "idade inválida";
                 return;
+            }else if(idade <= 12){
+                teste = "Criança, nao vota";
+            }else if(idade <= 17){
+                teste = "Adolescente";
+            }else if(idade <= 59){
+                teste = "Adulto";
+            }else{
+                teste = "idoso";
+            }if(idade >= 16){
+                teste += "pode votar";
+            }else if(idade >= 0){
+                teste += "nao pode votar";
             }
+            document.getElementById("resultado").innerHTML = teste;
         }
     </script>
 </body>
 </html>
+
+

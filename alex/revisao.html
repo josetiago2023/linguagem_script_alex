@@ -1,0 +1,53 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Questão 01</p>
+    produto
+    <input type="text" id = "Produto">
+    desconto
+    <input type="text" id = "Desconto">
+    <button onclick="calcular()">calcular</button>
+    <p id = "resultado"></p>
+    <br>
+
+    <p>Questao 02</p>
+    digite o raio
+    <input type="number" id = "Raio">
+    <button onclick = "calculo2()">click</button>
+    <p id = "resultado2"></p>
+
+
+    <p>Questao 03:</p>
+    
+
+
+
+
+
+    <script>
+        function calculo2(){
+            let raio = Number(document.getElementById("Raio").value);
+            let area= Math.PI * raio * raio;
+            document.getElementById("resultado2").innerHTML = "a area do circulo é: " + area;
+        }
+    </script>
+    <script>
+        function calcular(){
+            let produto = Number(document.getElementById("Produto").value);
+            let desconto = Number(document.getElementById("Desconto").value);
+            let calculo = (produto * desconto) / 100;
+            document.getElementById("resultado").innerHTML = "valor do DESCONTO = " + calculo + " R$"; 
+
+        }
+
+
+    </script>
+</body>
+</html>
