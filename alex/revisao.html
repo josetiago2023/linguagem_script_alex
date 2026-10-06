@@ -25,7 +25,14 @@
 
 
     <p>Questao 03:</p>
-    
+    Digite quanto reais voce quer converter
+<input type="text" id = "Real">    
+<button onclick="calcularconversao()">click</button>
+<p id = "resultado3"></p>
+
+
+<p>Questao 4:</p>
+
 
 
 
@@ -43,11 +50,20 @@
             let produto = Number(document.getElementById("Produto").value);
             let desconto = Number(document.getElementById("Desconto").value);
             let calculo = (produto * desconto) / 100;
-            document.getElementById("resultado").innerHTML = "valor do DESCONTO = " + calculo + " R$"; 
+            document.getElementById("resultado").innerHTML = "valor do DESCONTO = " + calculo.toFixed(2) + " R$"; 
+
+        }
+
+        function calcularconversao(){
+            let real = Number(document.getElementById("Real").value);
+            let dolar = 5.20;
+            let resultado = real / dolar;
+            document.getElementById("resultado3").innerHTML = "voce tem: " + resultado.toFixed(2) + " dolars";
 
         }
 
 
+ 
     </script>
 </body>
 </html>
