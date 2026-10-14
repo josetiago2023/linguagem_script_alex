@@ -1,0 +1,142 @@
+<!-- <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    atividade 01 (Média das 5 notas de um aluno)
+     <!-- Digite a nota
+     <input type="text" id = "Nota"> -->
+     <!-- <button onclick="calcular()">click</button>
+     <p id = "resultado"></p>
+<script>
+    function calcular(){
+        let teste;
+        
+        let soma = 0;
+        for( let i = 1; i <= 5; i++){
+             let nota = Number(prompt("Digite uma nota: "));
+            //let nota = Number(document.getElementById("Nota").value);
+            soma += nota;
+
+
+        }let media = soma / 5;
+        document.getElementById("resultado").innerHTML = "A média do aluno é: " + media;
+    } --
+
+
+
+
+    // let soma = 0;
+
+    // for(let i=1; i <= 5; i++){
+    //     let nota = Number(prompt("Digite uma nota: "));
+    //     soma = soma + nota;//ou soma+= nota;
+    // }
+
+    // let media = soma / 5;
+
+    // console.log("A média do aluno é: " + media);
+
+
+// atividade 02
+// let numero = Number(prompt("Digite um número"));
+
+// for(){
+
+// }
+
+
+
+
+//atividade 03(descobrir maior nota do aluno)
+let maiornota = 0;
+
+for(let i = 1; i<=5; i++){
+    let nota = Number(prompt("Digite uma nota: "));
+
+    if(nota > maiornota){
+        maiornota = nota;
+
+    }
+}
+console.log("A maior nota do aluno é: " + maiornota);
+
+
+
+ menor nota 
+ let maior nota = 0;
+
+ for(let i = 1; i < = 5; i++{
+
+ })
+
+
+</script>
+    
+    <p></p>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let menornota = 0;
+
+        for(let i=1; i<=5; i++){
+            let nota = Number(prompt("digite uma nota: "));
+
+            if(nota < menornota){
+                menornota = nota;
+            }
+        }
+        console.log("menor nota: ") + nota;
+    </script>
+</body>
+</html> --> 
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Menor nota</title>
+</head>
+<body>
+    <script>
+        let menornota;
+
+        for (let i = 1; i <= 5; i++) {
+            let nota = Number(prompt("Digite uma nota: "));
+
+            if (i == 1 || nota < menornota) {
+                menornota = nota;
+            }
+        }
+
+        console.log("Menor nota: " + menornota);
+    </script>
+
+
+
+let menornota = Number(prompt("digite uma nota "));
+
+for(let i=1; i<=5; i++){
+    let nota = Number(prompt("Digite uma nota "));
+
+    if(nota < menornota){
+        menornota = nota;
+        
+    }
+}
+</body>
+</html>
